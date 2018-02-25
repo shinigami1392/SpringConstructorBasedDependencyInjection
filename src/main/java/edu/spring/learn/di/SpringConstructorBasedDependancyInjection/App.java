@@ -11,9 +11,10 @@ import edu.spring.learn.di.beans.Course;
  */
 public class App 
 {
+	static ApplicationContext context;
     public static void main( String[] args )
     {
-    		ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+    		context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
     		Course course = context.getBean(Course.class);
     		System.out.println(course.toString());
     }
