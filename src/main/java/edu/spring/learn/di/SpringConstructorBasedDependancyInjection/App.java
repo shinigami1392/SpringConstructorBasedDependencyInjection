@@ -1,13 +1,20 @@
 package edu.spring.learn.di.SpringConstructorBasedDependancyInjection;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import edu.spring.learn.di.beans.Course;
+
 /**
- * Hello world!
+ * @author pushkarladhe
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    		ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+    		Course course = context.getBean(Course.class);
+    		System.out.println(course.toString());
     }
 }
