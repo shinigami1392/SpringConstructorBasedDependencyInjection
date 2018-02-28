@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean class="edu.spring.demo.di.beans.Course">
+		<constructor-arg index="0" ref="professor"></constructor-arg>
+		<constructor-arg index="1" ref="topic"></constructor-arg>
+		<constructor-arg index="2" value="CSE512"></constructor-arg>
+	</bean>
+
+	<bean id="professor" class="edu.spring.demo.di.beans.Professor">
+		<constructor-arg index="0" value="Dr. ABC"></constructor-arg>
+		<constructor-arg index="1" value="Assistant Professor"></constructor-arg>
+		<constructor-arg index="2" value="BYENG123"></constructor-arg>
+	</bean>
+
+	<bean id="topic" class="edu.spring.demo.di.beans.Topic">
+		<constructor-arg index="0" value="Distributed Data Systems"></constructor-arg>
+		<constructor-arg index="1" value="Computer Software Engineering"></constructor-arg>
+	</bean>
+</beans>

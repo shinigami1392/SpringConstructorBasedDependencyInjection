@@ -1,4 +1,4 @@
-package edu.spring.learn.di.SpringConstructorBasedDependancyInjection;
+package edu.spring.demo.di.SpringConstructorBasedDependancyInjection;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
