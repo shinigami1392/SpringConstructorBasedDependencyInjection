@@ -1,9 +1,9 @@
-package edu.spring.learn.di.SpringConstructorBasedDependancyInjection;
+package edu.spring.demo.di.SpringConstructorBasedDependancyInjection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import edu.spring.learn.di.beans.Course;
+import edu.spring.demo.di.beans.Course;
 
 /**
  * @author pushkarladhe
@@ -11,7 +11,7 @@ import edu.spring.learn.di.beans.Course;
  */
 public class App 
 {
-	static ApplicationContext context;
+	private static ApplicationContext context;
     public static void main( String[] args )
     {
     		context = new ClassPathXmlApplicationContext("ApplicationContext.xml");

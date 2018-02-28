@@ -1,4 +1,4 @@
-package edu.spring.learn.di.beans;
+package edu.spring.demo.di.beans;
 
 public class Professor {
 	private String name;
